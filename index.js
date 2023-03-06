@@ -1,10 +1,10 @@
-import { catsData } from "./data"
+import { catsData } from "./data.js"
 
 const emotionsArray = []
 
 function getEmotionsArray(cats){
-    for (cat of cats){
-        for (emotion of cat.emotionTags) {
+    for (let cat of cats){
+        for (let emotion of cat.emotionTags) {
             emotionsArray.push(emotion)
 
         }
